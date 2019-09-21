@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html>
 <!--<![endif]-->
 
 <head>
@@ -12,7 +12,8 @@
     <title>n e w p a g e</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,23 +21,32 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <h1> this is a new page. work in progress... </h1>
-    <form method="get" action="http://www.google.com/search">
+    <h2 style="text-align: center;">Date/Time: <span id="datetime"></span></h2>
 
-        <div style="border:2px solid black;padding:4px;width:15em;">
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/37d80n122d27/oakland/?unit=us" data-label_1="OAKLAND" data-label_2="WEATHER" data-theme="original" >OAKLAND WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <form class="search-bar" method="get" action="http://www.google.com/search" target="_blank">
+
+        <div class="seach-bar">
             <table border="0" align="center" cellpadding="0">
                 <tr>
                     <td>
-                        <input type="text" name="q" size="25" style="color:#808080;" maxlength="255"
-                            value="a r e y o u l oo k i n g f o r somet h i n g ?"
+                        <input type="text" name="q" size="25"
+                            style="color:#808080;width:80vw;height:20vh;font-size:14vh;word-wrap: break-word;text-align:center;"
+                            maxlength="255" value="looking for something?"
                             onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';"
                             onblur="if(this.value=='')this.value=this.defaultValue; " />
-                        <input type="submit" value="Go!" />
                 </tr>
             </table>
         </div>
 
     </form>
-    <script src="" async defer></script>
 </body>
 
 </html>
