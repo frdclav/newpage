@@ -1,23 +1,35 @@
 * {
     font-family: 'Amatic SC', cursive;
 }
+<<<<<<< HEAD
 body {
     /* background-image: url("https://i.imgur.com/qU2j62A.jpg");
     background-position: fixed;
     background-size: 100vw 100vh 100vw 100vh;
     background-repeat: no-repeat; */
     background-color: antiquewhite;
+=======
+div {
+    /* border: dashed;
+    border-color: greenyellow; */
+>>>>>>> 9d67ab25f01286a2f72b64d5261e7cfbe6565c98
 }
 h1 {
     text-align: center;
 }
 .search-bar {
     text-align: center;
-    align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 0;
     word-wrap: break-word;
+<<<<<<< HEAD
     background-color: transparent;
+=======
+    width: 100%;
+    height: 100%;
+    display:flex;
+    
+>>>>>>> 9d67ab25f01286a2f72b64d5261e7cfbe6565c98
     
 }
 input {
@@ -26,6 +38,7 @@ input {
     border-width: 2px;
     border-color: black;
     margin: 5px 5px 5px 5px;
+<<<<<<< HEAD
     background-color: transparent;
 }
 input.search {
@@ -34,7 +47,98 @@ input.search {
       width: 80vw;
       align:center;
       background-color: transparent;
+=======
+    width: 100%;
 }
-.flex {
+input.search {
+    
+      
+      color:#808080;font-size:25%;word-wrap: break-word;text-align:center;
+}
+body {
+    position: absolute;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.picture_frame {
+    border: solid;
+    position: relative;
+    text-align: center; 
+    width: 50vw;
+    height : 30vh;padding: 5px;
+    flex: 2;
+    margin: 0 0 0 0;
+    
+}
+.picture_frame img {
+   display:inline-block; max-height:100%; max-width:100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+td {
+    border: double;
+    border-width: 2px;
+    padding: 15px;
+    width: 30%;
+    height: auto;
+    font-size: 4vh;
+    text-align: center;
+    
+}
+a {
+    color: black;
+}
+.header{
+    flex:1;
+    text-align: left;
+>>>>>>> 9d67ab25f01286a2f72b64d5261e7cfbe6565c98
+}
+.datetime{
+    flex:2;
+    text-align: right;
+}
+.top_section{
     display:flex;
+    height: 12vh;
+    width: 90vw;
+    margin-left:5vw;
+    margin-right:5vw;
+}
+.midleft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    
+    width: 50vw;
+    flex:1;
+}
+/* .mid{
+    display: flex;
+    height: 80vh;
+    width:90vw;
+    margin-left:5vw;
+    margin-right:5vw;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+.mid1 {
+    flex:1;
+    width:30vw;
+    height:20vh;
+}
+.mid2 {
+    flex:2;
+    width:60vw;
+    height:60vh;
 }

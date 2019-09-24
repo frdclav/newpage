@@ -20,17 +20,31 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <h1> this is a new page. work in progress... </h1>
-    <h2 style="text-align: center;">Date/Time: <span id="datetime"></span></h2>
 
-    <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleString();
-    </script>
+
+    <div class="top_section">
+        <!-- this is the header -->
+        <header>
+            <h1> this is a new page. work in progress... </h1>
+        </header>
+
+
+
+        <!-- this is the date/time -->
+        <div class="datetime">
+            <h2 >Date/Time: <span id="datetime"></span></h2>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+            </script>
+        </div>
+    </div>
+    <!-- this is the weatherwidget -->
     <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/37d80n122d27/oakland/?unit=us" data-label_1="OAKLAND" data-label_2="WEATHER" data-theme="original" >OAKLAND WEATHER</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script> -->
+<<<<<<< HEAD
     <form class="search-bar" method="get" action="http://www.google.com/search" target="_blank">
 
         <div class="seach-bar">
@@ -44,9 +58,58 @@
                             onblur="if(this.value=='')this.value=this.defaultValue; " />
                 </tr>
             </table>
+=======
+    <center>
+        <div class="mid">
+            <!-- this is the search bar -->
+            <form class="search-bar" method="get" action="http://www.google.com/search" target="_blank">
+
+                <div class="search-bar">
+                    <table border="0" align="center" cellpadding="0">
+                        <tr>
+                            <td>
+                                <input type="text" name="q" size="25"
+                                    style="color:#808080;width:80vw;height:20vh;font-size:14vh;word-wrap: break-word;text-align:center;"
+                                    maxlength="255" value="looking for something?"
+                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';"
+                                    onblur="if(this.value=='')this.value=this.defaultValue; " />
+                        </tr>
+                    </table>
+                </div>
+
+            </form>
+            <!-- this is the links section -->
+            <div class="links">
+                <h2>going somewhere?</h2>
+                <table border="0" align="center" cellpadding="0">
+                    <tr>
+                        <td>
+                            <a href="#chase">CHASE</a></td>
+                        <td><a href="#WF">WELLS FARGO</a></td>
+                        <td><a href="#BC">BARCLAYS US</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#citi">CITIBANK</a></td>
+                        <td><a href="#paypal">PAYPAL</a></td>
+                        <td><a href="#ally">ALLY</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#etrade">ETRADE</a></td>
+                        <td><a href="#vanguard">VANGUARD</a></td>
+                        <td><a href="#fidelity">FIDELITY</a></td>
+                    </tr>
+                </table>
+
+            </div>
+
+>>>>>>> 9d67ab25f01286a2f72b64d5261e7cfbe6565c98
         </div>
 
-    </form>
+
+
+    </center>
+
+
 </body>
 
 </html>
