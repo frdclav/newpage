@@ -1,6 +1,13 @@
 * {
     font-family: 'Amatic SC', cursive;
 }
+body {
+    /* background-image: url("https://i.imgur.com/qU2j62A.jpg");
+    background-position: fixed;
+    background-size: 100vw 100vh 100vw 100vh;
+    background-repeat: no-repeat; */
+    background-color: antiquewhite;
+}
 h1 {
     text-align: center;
 }
@@ -10,6 +17,7 @@ h1 {
     margin-right: auto;
     margin-left: auto;
     word-wrap: break-word;
+    background-color: transparent;
     
 }
 input {
@@ -18,12 +26,14 @@ input {
     border-width: 2px;
     border-color: black;
     margin: 5px 5px 5px 5px;
+    background-color: transparent;
 }
 input.search {
     
       height: 5vh;
       width: 80vw;
       align:center;
+      background-color: transparent;
 }
 .flex {
     display:flex;
